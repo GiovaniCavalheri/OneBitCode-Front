@@ -1,0 +1,36 @@
+body {
+  background-color: #2c2c2d; /* Cor de fundo escura */
+  color: #fff; /* Cor do texto branca */
+  font-family: Arial, Helvetica, sans-serif; /* Fonte padrão */
+}
+
+
+.flex-container {
+  display: flex; /* Ativa o layout flexível */
+  flex-direction: row; /* Organiza os itens em linha (horizontal) */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
+  gap: 4rem; /* Espaço de 4rem entre os itens */
+  min-height: 80vh; /* Altura mínima de 80% da altura da tela */
+}
+
+.box {
+  background-color: #4547c7; /* Cor de fundo azul */
+  border: 2px solid #272727; /* Borda cinza escura */
+  height: 10rem; /* Altura padrão */
+  width: 10rem; /* Largura padrão */
+}
+
+.box.red {
+  background-color: #ff665c; /* Vermelho */
+}
+
+.box.yellow {
+  background-color: #f9ff58; /* Amarelo */
+  height: 20rem; /* Altura maior que as outras */
+}
+
+.box.blue {
+  background-color: #5255eb; /* Azul diferente */
+  height: 15rem; /* Altura média */
+}
