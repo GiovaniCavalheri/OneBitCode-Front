@@ -1,0 +1,42 @@
+header {
+  background-color: rgb(230, 230, 230);
+  padding: 1rem;
+}
+
+.start {
+  display: flex;
+  justify-content: start;
+  color: red;
+  text-decoration: none;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  text-decoration: none;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  align-items: end;
+  justify-content: end;
+}
+
+.call-to-action {
+  background-color: #ff5b6b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 4%;
+  text-decoration: none;
+}
