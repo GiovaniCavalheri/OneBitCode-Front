@@ -3,3 +3,14 @@
 // ==> Manutenção prática e rápida. 
 // ==> Estrutura totalmente organizada, clean. 
 
+function Button() {
+    return <button>Meu Botão</button>;
+}
+
+// function Container() {
+//     return {
+//         <div>
+//         </div>
+//     }
+// }
+
