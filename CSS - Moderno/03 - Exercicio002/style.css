@@ -1,20 +1,44 @@
+
 body {
-    background-color: #232323;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 1rem 2rem;
+  background-color: #232323;
+
+  color: #fff;
+
+  font-family: sans-serif;
+
+  /* Adiciona um espaçamento interno (padding) */
+  padding: 1rem 2rem;
 }
 
+.galery {
+  /* Ativa o modo Flexbox para alinhar os itens internos de forma flexível */
+  display: flex;
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  /* Permite que as imagens quebrem para a próxima linha se não houver espaço */
+  flex-wrap: wrap;
+
+  /* Adiciona um pequeno espaçamento (gap) de 2px entre as imagens */
+  gap: .125rem; 
 }
 
-img {
-    object-fit: cover;
-    height: 130px;
-    width: 170px;
-}
+/* Estilos aplicados diretamente às imagens (<img>) dentro da galeria */
+.galery > img {
 
+  /* Permite que a imagem cresça para ocupar espaço extra na linha */
+  flex-grow: 1;
+
+  /* Permite que a imagem encolha se não houver espaço suficiente */
+  flex-shrink: 1;
+
+  /* Define o tamanho base ideal da imagem (antes de crescer ou encolher) */
+  flex-basis: 12rem;
+
+  /* Define uma altura fixa para todas as imagens */
+  height: 12rem;
+
+  /* Define uma largura fixa para todas as imagens */
+  width: 12rem;
+
+  /* Faz a imagem cobrir todo o espaço disponível, cortando o excesso sem distorcer a proporção */
+  object-fit: cover;
+}
