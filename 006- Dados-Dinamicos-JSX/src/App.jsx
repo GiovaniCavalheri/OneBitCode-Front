@@ -1,21 +1,13 @@
 import Title from "./components/Title";
 import Subtitle from "./components/Subtitle";
 import StatusText from "./components/StatusText";
-import "./styles/globals.css";
+import styles from "./App.module.css"
 
 // ==> Componentes
 
 function App() {
   return (
-    <div 
-    style={{
-      backgroundColor: "#2c2d2e",
-      display: "grid",
-      minHeight: "100vh",
-      placeContent: "center",
-      textAlign: "center"
-    }}
-    >
+    <div className={styles.app}>
       <Title />
       <Subtitle />
       <StatusText />
