@@ -1,0 +1,6 @@
+.container {
+    background-color: #d7e1e7;
+    display: flex;
+    border-radius: 1rem;
+    gap: 4rem;
+}
