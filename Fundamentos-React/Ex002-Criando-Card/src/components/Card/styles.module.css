@@ -1,6 +1,38 @@
 .container {
-    background-color: #d7e1e7;
-    display: flex;
-    border-radius: 1rem;
-    gap: 4rem;
+  background-color: #d7e1e7;
+  display: flex;
+  border-radius: 1rem;
+  gap: 4rem;
+  height: 33rem;
+  width: 70rem;
+  margin: 6rem auto;
+  padding: 3rem;
+}
+
+.poster {
+  border-radius: 0.25rem;
+  border: 8px solid rgb(36, 36, 36);
+  box-shadow: 0 45px 45px -16px rgba(37, 122, 146, 0.5);
+}
+
+.titlePag {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.button {
+  background-color: #121212;
+  border: 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 4px rgba(95, 115, 133, 0.738);
+  color: #fff;
+  font-size: 1rem;
+  margin-top: 2rem;
+  padding: 0.75em 1.25em;
+  transition: 0.5s;
+}
+
+.button:hover {
+  cursor: pointer;
+  margin-left: .5rem;
 }
