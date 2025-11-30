@@ -1,13 +1,12 @@
-import imgCard from "../../assets/imgreact.jpg";
 import styles from "./styles.module.css"
 
-function Card() {
-    return (
-      // eslint-disable-next-line no-undef
+// eslint-disable-next-line no-unused-vars
+function Card(props) {
+    return ( 
       <div className={styles.container}>
-        <img className={styles.poster} src={imgCard} alt="Um poster interativo do Star Wars" />
+        <img className={styles.poster} src={props.image} alt="Um poster interativo do Star Wars" />
         <div>
-          <h2 className={styles.titlePag}>Pôster: Star Wars(1972)</h2>
+          <h2 className={styles.titlePag}>{props.title}</h2>
           <p>
             Um pôster decorativo épico do filme Star Wars, com moldura de MDF e
             tamanho A3. Uma ótima recordação de um dos mais icônicos filmes de
