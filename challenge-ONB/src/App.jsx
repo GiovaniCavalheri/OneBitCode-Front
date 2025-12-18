@@ -3,21 +3,27 @@ import NewGameForm from "./Components/newGameForm";
 import useGameColletion from "./Hooks/useGameCollection";
 
 function App() {
-  const { games, addGame, removeGame } = useGameColletion()
+  const { games, addGame, removeGame } = useGameColletion();
 
   return (
-    <div className="app">
+    <div id="app">
       <h1>Biblioteca de Jogos</h1>
       <NewGameForm addGame={addGame} />
       <div className="games">
-        {games.map((game) => (
-          <Game
-            key={game.id}
-            title={game.title}
-            cover={game.cover}
-            onRemove={() => removeGame(game.id)}
-          />
-        ))}
+        {games.length > 0 ? (
+          games.map((game) => (
+            <Game
+              key={game.id}
+              title={game.title}
+              cover={game.cover}
+              onRemove={() => removeGame(game.id)}
+            />
+          ))
+        ) : (
+          <h2 style={{ margin: "4rem auto" }}>
+            Parece que ainda não tem nada aqui. Tente adicionar
+          </h2>
+        )}
       </div>
     </div>
   );
