@@ -15,7 +15,7 @@ function NewForm({ addComment }) {
   // ==> Submissao do form
   const handleSubmit = (ev) => {
     ev.preventDefault();
-    addComment({ email, comment });
+    addComment({ email, comment});
     setEmail("");
     setComment("");
   };

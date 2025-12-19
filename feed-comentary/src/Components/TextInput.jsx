@@ -5,9 +5,10 @@ TextInput.PropTypes = {
   label: PropTypes.string,
   value: PropTypes.string,
   setValue: PropTypes.func,
+  date: PropTypes.func,
 };
 
-function TextInput({ id, label, value, setValue }) {
+function TextInput({ id, label, value, setValue}) {
   return (
     <div>
       <label htmlFor={id}>{label}</label>
