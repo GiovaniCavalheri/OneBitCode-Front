@@ -1,16 +1,11 @@
-import { Link, useParams } from "react-router-dom";
-import products from "../src/database.json";
+import { Link, useLoaderData } from "react-router-dom";
+
 
 function Product() {
-      const { productId } = useParams();
-
-    const product = products.find(p => p.id === +productId);
-
-    if(!product) {
-        return (
-            <h2>Ops.. Esse produto não foi encontrado!</h2>
-        )
-    }
+    const product = useLoaderData();
+//   if (!product) {
+//     return <h2>Ops.. Esse produto não foi encontrado!</h2>;
+//   }
 
   return (
     <section>

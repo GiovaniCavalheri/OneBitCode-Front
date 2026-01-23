@@ -6,6 +6,8 @@ import AdminHome from "../screens/admin/AdminHome";
 import "./App.css";
 import RootLayout from "../screens/RootLayout";
 import Product from "../screens/Product";
+import loadProduct from "./loaders/products";
+import ProductBoundary from "./error-boundaries/ProductBoundary";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +21,9 @@ const router = createBrowserRouter([
         element: <Products />,
       }, {
         path: "products/:productId",
-        element: <Product />
+        element: <Product />,
+        loader: loadProduct, // ==> Funcao que carrega os dados necessários para que uma rota especifica funcione
+        errorElement: <ProductBoundary />
       },
       {
         path: "cart",
